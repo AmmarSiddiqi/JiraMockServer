@@ -1,0 +1,365 @@
+{
+  "uuid": "868dccb4-52fc-4e03-9c26-895b8e8c17d1",
+  "lastMigration": 25,
+  "name": "JiraMockAPIs",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "0.0.0.0",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "7dd653b2-e5cf-48e3-9f95-1b68e9fac5a1",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/project/search",
+      "responses": [
+        {
+          "uuid": "d16426de-9ad8-4516-b8e5-559fca98d1d3",
+          "body": "{\n  \"maxResults\": 50,\n  \"startAt\": 0,\n  \"total\": 17,\n  \"isLast\": true,\n  \"values\": [\n    {\n      \"self\": \"https://uworxltd.atlassian.net/rest/api/3/project/10000\",\n      \"id\": \"10000\",\n      \"key\": \"KFA\",\n      \"lead\": {\n        \"displayName\": \"Sami uz Zafar\"\n      },\n      \"name\": \"Khoji for Agile\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e540b432-f79b-4a8d-9c9d-f8bb9c84dcdc",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/2/myself",
+      "responses": [
+        {
+          "uuid": "bcc72b45-26f7-4ee7-bbdf-159507b811fa",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0f0f8db2-68b1-4e69-941c-70982ffc7ec1",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/agile/1.0/board",
+      "responses": [
+        {
+          "uuid": "1bd0170e-1fc9-47a3-a472-43d6e2681cce",
+          "body": "{\n  \"maxResults\": 50,\n  \"startAt\": 0,\n  \"total\": 27,\n  \"isLast\": true,\n  \"values\": [\n    {\n      \"id\": 27,\n      \"name\": \"Khoji Infrastructure\",\n      \"type\": \"scrum\",\n      \"location\": {\n        \"projectId\": 10000,\n        \"displayName\": \"Khoji for Agile (KFA)\",\n        \"projectName\": \"Khoji for Agile\",\n        \"projectKey\": \"KFA\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"https://uworxltd.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10513?size=small\",\n        \"name\": \"Khoji for Agile (KFA)\"\n      }\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "aaf169bc-f0cb-4576-be1d-920a5ede343a",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/users/search",
+      "responses": [
+        {
+          "uuid": "49948e79-c216-44b4-87eb-947ed76ac711",
+          "body": "[\r\n    {\r\n        \"accountId\": \"557058:0f7e5376-ee2f-4032-937a-fce6492efda8\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Rana Asif Rubbani\",\r\n        \"active\": true\r\n    },\r\n    {\r\n        \"accountId\": \"557058:9ec95961-8eaf-4cba-a0a4-1ab81e1f3cad\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Umair Khalid\",\r\n        \"active\": true\r\n    },\r\n    {\r\n        \"accountId\": \"5c4736eb23f5bf6726214a37\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Faisal Khan\",\r\n        \"active\": false\r\n    },\r\n    {\r\n        \"accountId\": \"5c4736ec85c9b117bae2f5a1\",\r\n        \"accountType\": \"atlassian\",\r\n        \"emailAddress\": \"naveed.chaudhry@uworx.co.uk\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Naveed Chaudhry\",\r\n        \"active\": true\r\n    },\r\n    {\r\n        \"accountId\": \"5c19ea36dae8a34f8207bcfe\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Maheen nasir\",\r\n        \"active\": false\r\n    },\r\n    {\r\n        \"accountId\": \"5cac30ab34e0ed3c29b51afc\",\r\n        \"accountType\": \"atlassian\",\r\n        \"emailAddress\": \"mairatul.islam@uworx.co.uk\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Maira Tul Islam\",\r\n        \"active\": true\r\n    },\r\n    {\r\n        \"accountId\": \"5cb461cd3b6e200cbf1c9505\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Rabia Shamim\",\r\n        \"active\": false\r\n    },\r\n    {\r\n        \"accountId\": \"5def63c604f61d0ec50f4d2b\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Awab Ahmad\",\r\n        \"active\": false\r\n    },\r\n    {\r\n        \"accountId\": \"5dd79af2af96bc0efbe56981\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"samia.saleem\",\r\n        \"active\": true\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "startAt",
+              "value": "0",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        },
+        {
+          "uuid": "41561983-43db-41ea-a5bb-923946f62dfc",
+          "body": "[]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "startAt",
+              "value": "50",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "startAt",
+              "value": "10000",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "b7bb426a-8f32-4a84-8c2e-35f6340727d3",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/serverInfo",
+      "responses": [
+        {
+          "uuid": "7a78fcb6-4f7f-43be-8607-df87cbf5d8da",
+          "body": "{\r\n    \"baseUrl\": \"https://uworxltd.atlassian.net\",\r\n    \"version\": \"1001.0.0-SNAPSHOT\",\r\n    \"versionNumbers\": [\r\n        1001,\r\n        0,\r\n        0\r\n    ],\r\n    \"deploymentType\": \"Cloud\",\r\n    \"buildNumber\": 100217,\r\n    \"serverTime\":\"2023-03-01T06:11:48.666+0000\",\r\n    \"buildDate\": \"2023-02-27T03:20:27.000+0000\",\r\n    \"scmInfo\": \"65be9f24a8f87792be90e53a8c87215bef7ad6bc\",\r\n    \"serverTitle\": \"Jira\",\r\n    \"defaultLocale\": {\r\n        \"locale\": \"en_US\"\r\n    }\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "6a8e7613-6837-4aab-b90e-8fdded3e21ee",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/statuscategory",
+      "responses": [
+        {
+          "uuid": "a6d71222-03f4-4782-ab4c-051c5b496d73",
+          "body": "[\r\n    {\r\n        \"self\": \"https://uworxltd.atlassian.net/rest/api/3/statuscategory/1\",\r\n        \"id\": 1,\r\n        \"key\": \"undefined\",\r\n        \"colorName\": \"medium-gray\",\r\n        \"name\": \"No Category\"\r\n    },\r\n    {\r\n        \"self\": \"https://uworxltd.atlassian.net/rest/api/3/statuscategory/2\",\r\n        \"id\": 2,\r\n        \"key\": \"new\",\r\n        \"colorName\": \"blue-gray\",\r\n        \"name\": \"To Do\"\r\n    },\r\n    {\r\n        \"self\": \"https://uworxltd.atlassian.net/rest/api/3/statuscategory/4\",\r\n        \"id\": 4,\r\n        \"key\": \"indeterminate\",\r\n        \"colorName\": \"yellow\",\r\n        \"name\": \"In Progress\"\r\n    },\r\n    {\r\n        \"self\": \"https://uworxltd.atlassian.net/rest/api/3/statuscategory/3\",\r\n        \"id\": 3,\r\n        \"key\": \"done\",\r\n        \"colorName\": \"green\",\r\n        \"name\": \"Done\"\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "b044f9ee-fbd6-42bd-8322-d5f8ed959b54",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/status",
+      "responses": [
+        {
+          "uuid": "4436c412-3ceb-42b1-972d-9799c27532e9",
+          "body": "[\n  {\n    \"name\": \"Open\",\n    \"id\": \"11\",\n    \"statusCategory\": {\n      \"id\": 2,\n      \"colorName\": \"blue-gray\",\n      \"name\": \"To Do\"\n    }\n  },\n  {\n    \"name\": \"Opportunity\",\n    \"id\": \"10035\",\n    \"statusCategory\": {\n      \"id\": 2,\n      \"key\": \"new\",\n      \"colorName\": \"blue-gray\",\n      \"name\": \"In Progress\"\n    }\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "2e267c86-2104-4af8-b792-ad5d77b0f2ae",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v2/item_prices/Test-Sanity-USD-Daily",
+      "responses": [
+        {
+          "uuid": "cac865e8-c4a3-4f13-8b9e-428419cc9f01",
+          "body": "{\n    \"item_price\": {\n        \"id\": \"Test-Sanity-USD-Daily\",\n        \"name\": \"Test Sanity USD Daily\",\n        \"item_family_id\": \"Khoji-for-Agile\",\n        \"item_id\": \"Test-Sanity\",\n        \"status\": \"active\",\n        \"external_name\": \"Test Sanity\",\n        \"pricing_model\": \"flat_fee\",\n        \"price\": 0,\n        \"period\": 1,\n        \"currency_code\": \"USD\",\n        \"period_unit\": \"day\",\n        \"free_quantity\": 0,\n        \"channel\": \"web\",\n        \"resource_version\": 1677498659119,\n        \"updated_at\": 1677498659,\n        \"created_at\": 1677498659,\n        \"is_taxable\": true,\n        \"item_type\": \"plan\",\n        \"show_description_in_invoices\": false,\n        \"show_description_in_quotes\": false,\n        \"object\": \"item_price\"\n    }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f65187c1-364c-4116-bc1b-98907e0f58a7",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v2/items/Test-Sanity",
+      "responses": [
+        {
+          "uuid": "1b6bee8f-43b4-41e8-bd3f-af9e55727a2b",
+          "body": "{\n    \"item\": {\n        \"id\": \"Test-Sanity\",\n        \"name\": \"Test Sanity\",\n        \"external_name\": \"Test Sanity\",\n        \"status\": \"active\",\n        \"resource_version\": 1677669611509,\n        \"updated_at\": 1677669611,\n        \"item_family_id\": \"Khoji-for-Agile\",\n        \"type\": \"plan\",\n        \"is_shippable\": false,\n        \"is_giftable\": false,\n        \"enabled_for_checkout\": true,\n        \"enabled_in_portal\": true,\n        \"item_applicability\": \"all\",\n        \"metered\": false,\n        \"channel\": \"web\",\n        \"metadata\": {\n            \"components\": [\n                {\n                    \"id\": \"delivery-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"analysis-by-teamboard\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"analysis-by-release\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"analysis-by-worklog\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"reports-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"team-progress-report\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"release-report\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"indicator-summary-by-team\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"worklog-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"burnup-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"bug-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"epic-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"story-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"velocity-throughput-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"team-indicator\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"story-defect-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"stories-indicator\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"story-points-indicator\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"variance-indicators\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"alerts-analysis\",\n                    \"enabled\": true\n                }\n            ]\n        },\n        \"object\": \"item\"\n    }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "7dd653b2-e5cf-48e3-9f95-1b68e9fac5a1"
+    },
+    {
+      "type": "route",
+      "uuid": "e540b432-f79b-4a8d-9c9d-f8bb9c84dcdc"
+    },
+    {
+      "type": "route",
+      "uuid": "0f0f8db2-68b1-4e69-941c-70982ffc7ec1"
+    },
+    {
+      "type": "route",
+      "uuid": "aaf169bc-f0cb-4576-be1d-920a5ede343a"
+    },
+    {
+      "type": "route",
+      "uuid": "b7bb426a-8f32-4a84-8c2e-35f6340727d3"
+    },
+    {
+      "type": "route",
+      "uuid": "6a8e7613-6837-4aab-b90e-8fdded3e21ee"
+    },
+    {
+      "type": "route",
+      "uuid": "b044f9ee-fbd6-42bd-8322-d5f8ed959b54"
+    },
+    {
+      "type": "route",
+      "uuid": "2e267c86-2104-4af8-b792-ad5d77b0f2ae"
+    },
+    {
+      "type": "route",
+      "uuid": "f65187c1-364c-4116-bc1b-98907e0f58a7"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
