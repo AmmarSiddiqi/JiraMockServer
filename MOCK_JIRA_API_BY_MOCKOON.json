@@ -1,0 +1,737 @@
+{
+  "uuid": "a4d2e9e3-993e-49f6-afb6-a9e3bf20a9d9",
+  "lastMigration": 25,
+  "name": "JiraMockAPIs",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "0.0.0.0",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "8bf57a0f-11cf-4062-8849-8b6abb755639",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/project/search",
+      "responses": [
+        {
+          "uuid": "2b724306-8853-45ac-b44c-d4a76d9ff5ad",
+          "body": "{\n  \"maxResults\": 50,\n  \"startAt\": 0,\n  \"total\": 17,\n  \"isLast\": true,\n  \"values\": [\n    {\n      \"self\": \"https://uworxltd.atlassian.net/rest/api/3/project/10000\",\n      \"id\": \"10000\",\n      \"key\": \"KFA\",\n      \"lead\": {\n        \"displayName\": \"Sami uz Zafar\"\n      },\n      \"name\": \"Khoji for Agile\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "ae5dfd03-4e59-416c-b3f7-c809f57bbc3d",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/2/myself",
+      "responses": [
+        {
+          "uuid": "d2c210b1-320b-44bd-bc80-5a6f626736b6",
+          "body": "",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "bf1b5882-6124-4692-8cda-5f5fcb6b12b4",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/agile/1.0/board",
+      "responses": [
+        {
+          "uuid": "70b8813d-c67d-48cc-9cae-16efc95a6e37",
+          "body": "{\n  \"maxResults\": 50,\n  \"startAt\": 0,\n  \"total\": 27,\n  \"isLast\": true,\n  \"values\": [\n    {\n      \"id\": 27,\n      \"name\": \"Khoji Infrastructure\",\n      \"type\": \"scrum\",\n      \"location\": {\n        \"projectId\": 10000,\n        \"displayName\": \"Khoji for Agile (KFA)\",\n        \"projectName\": \"Khoji for Agile\",\n        \"projectKey\": \"KFA\",\n        \"projectTypeKey\": \"software\",\n        \"avatarURI\": \"https://uworxltd.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10513?size=small\",\n        \"name\": \"Khoji for Agile (KFA)\"\n      }\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "253dfee6-a0bd-4258-802e-c2c73a6e19ea",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/users/search",
+      "responses": [
+        {
+          "uuid": "0b97a7dc-f20f-443c-aa7a-fed5cf519b4b",
+          "body": "[\r\n    {\r\n        \"accountId\": \"557058:0f7e5376-ee2f-4032-937a-fce6492efda8\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Rana Asif Rubbani\",\r\n        \"active\": true\r\n    },\r\n    {\r\n        \"accountId\": \"557058:9ec95961-8eaf-4cba-a0a4-1ab81e1f3cad\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Umair Khalid\",\r\n        \"active\": true\r\n    },\r\n    {\r\n        \"accountId\": \"5c4736eb23f5bf6726214a37\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Faisal Khan\",\r\n        \"active\": false\r\n    },\r\n    {\r\n        \"accountId\": \"5c4736ec85c9b117bae2f5a1\",\r\n        \"accountType\": \"atlassian\",\r\n        \"emailAddress\": \"naveed.chaudhry@uworx.co.uk\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Naveed Chaudhry\",\r\n        \"active\": true\r\n    },\r\n    {\r\n        \"accountId\": \"5c19ea36dae8a34f8207bcfe\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Maheen nasir\",\r\n        \"active\": false\r\n    },\r\n    {\r\n        \"accountId\": \"5cac30ab34e0ed3c29b51afc\",\r\n        \"accountType\": \"atlassian\",\r\n        \"emailAddress\": \"mairatul.islam@uworx.co.uk\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Maira Tul Islam\",\r\n        \"active\": true\r\n    },\r\n    {\r\n        \"accountId\": \"5cb461cd3b6e200cbf1c9505\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Rabia Shamim\",\r\n        \"active\": false\r\n    },\r\n    {\r\n        \"accountId\": \"5def63c604f61d0ec50f4d2b\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"Awab Ahmad\",\r\n        \"active\": false\r\n    },\r\n    {\r\n        \"accountId\": \"5dd79af2af96bc0efbe56981\",\r\n        \"accountType\": \"atlassian\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://cdn-icons-png.flaticon.com/512/659/659956.png?w=826&t=st=1677654191~exp=1677654791~hmac=ece367409f811ebda0f6041ccd643a32c4bba775f654b6146539805a1972e117\"\r\n        },\r\n        \"displayName\": \"samia.saleem\",\r\n        \"active\": true\r\n    }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "startAt",
+              "value": "0",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        },
+        {
+          "uuid": "154491da-aa8c-428b-9024-0a26e70c0e95",
+          "body": "[]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "startAt",
+              "value": "50",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "startAt",
+              "value": "10000",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "280068a9-731a-4ed0-af8e-6b1a34b0a719",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/serverInfo",
+      "responses": [
+        {
+          "uuid": "83dd8a99-c848-4ec7-a063-352417c40537",
+          "body": "{\r\n    \"baseUrl\": \"https://uworxltd.atlassian.net\",\r\n    \"version\": \"1001.0.0-SNAPSHOT\",\r\n    \"versionNumbers\": [\r\n        1001,\r\n        0,\r\n        0\r\n    ],\r\n    \"deploymentType\": \"Cloud\",\r\n    \"buildNumber\": 100217,\r\n    \"serverTime\":\"2023-03-01T06:11:48.666+0000\",\r\n    \"buildDate\": \"2023-02-27T03:20:27.000+0000\",\r\n    \"scmInfo\": \"65be9f24a8f87792be90e53a8c87215bef7ad6bc\",\r\n    \"serverTitle\": \"Jira\",\r\n    \"defaultLocale\": {\r\n        \"locale\": \"en_US\"\r\n    }\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "3eb5c701-a168-4265-9626-4815272c1900",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/statuscategory",
+      "responses": [
+        {
+          "uuid": "995b9301-d82a-4b80-b727-82c7e65a507b",
+          "body": "[\n  {\n    \"self\": \"https://uworxltd.atlassian.net/rest/api/3/statuscategory/1\",\n    \"id\": 1,\n    \"key\": \"undefined\",\n    \"colorName\": \"medium-gray\",\n    \"name\": \"No Category\"\n  },\n  {\n    \"self\": \"https://uworxltd.atlassian.net/rest/api/3/statuscategory/2\",\n    \"id\": 2,\n    \"key\": \"new\",\n    \"colorName\": \"blue-gray\",\n    \"name\": \"To Do\"\n  },\n  {\n    \"self\": \"https://uworxltd.atlassian.net/rest/api/3/statuscategory/4\",\n    \"id\": 4,\n    \"key\": \"indeterminate\",\n    \"colorName\": \"yellow\",\n    \"name\": \"In Progress\"\n  },\n  {\n    \"self\": \"https://uworxltd.atlassian.net/rest/api/3/statuscategory/3\",\n    \"id\": 3,\n    \"key\": \"done\",\n    \"colorName\": \"green\",\n    \"name\": \"Done\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "62a74206-1c2b-4708-add0-23da9e776f91",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/3/status",
+      "responses": [
+        {
+          "uuid": "4dadf55d-796a-4a36-adcf-da2e33ced6a7",
+          "body": "[\n  {\n    \"name\": \"Open\",\n    \"id\": \"1\",\n    \"statusCategory\": {\n      \"id\": 2,\n      \"colorName\": \"blue-gray\",\n      \"name\": \"To Do\"\n    }\n  },\n  {\n    \"name\": \"In Progress\",\n    \"id\": \"3\",\n    \"statusCategory\": {\n      \"id\": 4,\n      \"key\": \"new\",\n      \"colorName\": \"yellow\",\n      \"name\": \"In Progress\"\n    }\n  },\n  {\n    \"name\": \"Resolved\",\n    \"id\": \"5\",\n    \"statusCategory\": {\n      \"id\": 3,\n      \"key\": \"new\",\n      \"colorName\": \"green\",\n      \"name\": \"Done\"\n    }\n  },\n  {\n    \"name\": \"To Do\",\n    \"id\": \"10001\",\n    \"statusCategory\": {\n      \"id\": 2,\n      \"key\": \"new\",\n      \"colorName\": \"blue-gray\",\n      \"name\": \"To Do\"\n    }\n  },\n  {\n    \"name\": \"Done\",\n    \"id\": \"10002\",\n    \"statusCategory\": {\n      \"id\": 3,\n      \"key\": \"new\",\n      \"colorName\": \"green\",\n      \"name\": \"Done\"\n    }\n  },\n  {\n    \"name\": \"Require Review\",\n    \"id\": \"10003\",\n    \"statusCategory\": {\n      \"id\": 4,\n      \"key\": \"new\",\n      \"colorName\": \"yellow\",\n      \"name\": \"In Progress\"\n    }\n  },\n  {\n    \"name\": \"In Review\",\n    \"id\": \"10004\",\n    \"statusCategory\": {\n      \"id\": 4,\n      \"key\": \"new\",\n      \"colorName\": \"yellow\",\n      \"name\": \"In Progress\"\n    }\n  },\n  {\n    \"name\": \"Ready to Test\",\n    \"id\": \"10005\",\n    \"statusCategory\": {\n      \"id\": 4,\n      \"key\": \"new\",\n      \"colorName\": \"yellow\",\n      \"name\": \"In Progress\"\n    }\n  },\n  {\n    \"name\": \"In Test\",\n    \"id\": \"10006\",\n    \"statusCategory\": {\n      \"id\": 4,\n      \"key\": \"new\",\n      \"colorName\": \"yellow\",\n      \"name\": \"In Progress\"\n    }\n  }, \n  {\n    \"name\": \"READY FOR DEVELOPMENT\",\n    \"id\": \"10012\",\n    \"statusCategory\": {\n      \"id\": 2,\n      \"key\": \"new\",\n      \"colorName\": \"blue-gray\",\n      \"name\": \"To Do\"\n    }\n  },\n  {\n    \"name\": \"Merged\",\n    \"id\": \"10020\",\n    \"statusCategory\": {\n      \"id\": 3,\n      \"key\": \"new\",\n      \"colorName\": \"green\",\n      \"name\": \"Done\"\n    }\n  },\n  {\n    \"name\": \"READY TO MERGE\",\n    \"id\": \"10021\",\n    \"statusCategory\": {\n      \"id\": 4,\n      \"key\": \"new\",\n      \"colorName\": \"yellow\",\n      \"name\": \"In Progress\"\n    }\n  },\n  {\n    \"name\": \"Triage\",\n    \"id\": \"10076\",\n    \"statusCategory\": {\n      \"id\": 2,\n      \"key\": \"new\",\n      \"colorName\": \"blue-gray\",\n      \"name\": \"To Do\"\n    }\n  },\n  {\n    \"name\": \"Blocked\",\n    \"id\": \"10077\",\n    \"statusCategory\": {\n      \"id\": 2,\n      \"key\": \"new\",\n      \"colorName\": \"blue-gray\",\n      \"name\": \"To Do\"\n    }\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "276bcb89-d441-40d9-8ecc-30e3de45f853",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v2/item_prices/Test-Sanity-USD-Daily",
+      "responses": [
+        {
+          "uuid": "1cf78d4d-419c-44f1-9a3d-0eec3c794a36",
+          "body": "{\n    \"item_price\": {\n        \"id\": \"Test-Sanity-USD-Daily\",\n        \"name\": \"Test Sanity USD Daily\",\n        \"item_family_id\": \"Khoji-for-Agile\",\n        \"item_id\": \"Test-Sanity\",\n        \"status\": \"active\",\n        \"external_name\": \"Test Sanity\",\n        \"pricing_model\": \"flat_fee\",\n        \"price\": 0,\n        \"period\": 1,\n        \"currency_code\": \"USD\",\n        \"period_unit\": \"day\",\n        \"free_quantity\": 0,\n        \"channel\": \"web\",\n        \"resource_version\": 1677498659119,\n        \"updated_at\": 1677498659,\n        \"created_at\": 1677498659,\n        \"is_taxable\": true,\n        \"item_type\": \"plan\",\n        \"show_description_in_invoices\": false,\n        \"show_description_in_quotes\": false,\n        \"object\": \"item_price\"\n    }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "dc905166-23f2-4ee2-984c-112da385ff2f",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v2/items/Test-Sanity",
+      "responses": [
+        {
+          "uuid": "5e8b49d7-f54d-4c4c-89a6-021932c6c677",
+          "body": "{\n    \"item\": {\n        \"id\": \"Test-Sanity\",\n        \"name\": \"Test Sanity\",\n        \"external_name\": \"Test Sanity\",\n        \"status\": \"active\",\n        \"resource_version\": 1677669611509,\n        \"updated_at\": 1677669611,\n        \"item_family_id\": \"Khoji-for-Agile\",\n        \"type\": \"plan\",\n        \"is_shippable\": false,\n        \"is_giftable\": false,\n        \"enabled_for_checkout\": true,\n        \"enabled_in_portal\": true,\n        \"item_applicability\": \"all\",\n        \"metered\": false,\n        \"channel\": \"web\",\n        \"metadata\": {\n            \"components\": [\n                {\n                    \"id\": \"delivery-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"analysis-by-teamboard\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"analysis-by-release\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"analysis-by-worklog\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"reports-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"team-progress-report\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"release-report\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"indicator-summary-by-team\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"worklog-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"burnup-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"bug-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"epic-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"story-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"velocity-throughput-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"team-indicator\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"story-defect-analysis\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"stories-indicator\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"story-points-indicator\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"variance-indicators\",\n                    \"enabled\": true\n                },\n                {\n                    \"id\": \"alerts-analysis\",\n                    \"enabled\": true\n                }\n            ]\n        },\n        \"object\": \"item\"\n    }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "126851bb-aab9-4b4f-850c-209463a36882",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/api/2/filter/10041",
+      "responses": [
+        {
+          "uuid": "f683a8ff-b888-4683-8efe-a23c3500a820",
+          "body": "{\r\n    \"self\": \"https://uworxltd.atlassian.net/rest/api/2/filter/10000\",\r\n    \"id\": \"10000\",\r\n    \"name\": \"Filter for KFA board\",\r\n    \"owner\": {\r\n        \"self\": \"https://uworxltd.atlassian.net/rest/api/2/user?accountId=557058:0f7e5376-ee2f-4032-937a-fce6492efda8\",\r\n        \"accountId\": \"557058:0f7e5376-ee2f-4032-937a-fce6492efda8\",\r\n        \"avatarUrls\": {\r\n            \"48x48\": \"https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:0f7e5376-ee2f-4032-937a-fce6492efda8/6e2c254b-4d9e-422e-94ba-515be4987569/48\"\r\n        },\r\n        \"displayName\": \"Rana Asif Rubbani\",\r\n        \"active\": true\r\n    },\r\n    \"jql\": \"project = KFA ORDER BY Rank ASC\",\r\n    \"viewUrl\": \"https://uworxltd.atlassian.net/issues/?filter=10000\",\r\n    \"searchUrl\": \"https://uworxltd.atlassian.net/rest/api/2/search?jql=project+%3D+KFA+ORDER+BY+Rank+ASC\",\r\n    \"favourite\": false,\r\n    \"favouritedCount\": 0,\r\n    \"sharePermissions\": [\r\n        {\r\n            \"id\": 10100,\r\n            \"type\": \"project\",\r\n            \"project\": {\r\n                \"self\": \"https://uworxltd.atlassian.net/rest/api/2/project/10000\",\r\n                \"id\": \"10000\",\r\n                \"key\": \"KFA\",\r\n                \"assigneeType\": \"PROJECT_LEAD\",\r\n                \"name\": \"Khoji for Agile\",\r\n                \"roles\": {},\r\n                \"avatarUrls\": {\r\n                    \"48x48\": \"https://uworxltd.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10513\"\r\n                },\r\n                \"projectTypeKey\": \"software\",\r\n                \"simplified\": false,\r\n                \"style\": \"classic\",\r\n                \"properties\": {}\r\n            }\r\n        }\r\n    ],\r\n    \"editPermissions\": [],\r\n    \"isWritable\": false,\r\n    \"sharedUsers\": {\r\n        \"size\": 68,\r\n        \"items\": [],\r\n        \"max-results\": 1000,\r\n        \"start-index\": 0,\r\n        \"end-index\": 0\r\n    },\r\n    \"subscriptions\": {\r\n        \"size\": 0,\r\n        \"items\": [],\r\n        \"max-results\": 1000,\r\n        \"start-index\": 0,\r\n        \"end-index\": 0\r\n    }\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "a87be9d3-0ffd-4b8e-9f09-df9413ea3627",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "rest/agile/1.0/board/27/configuration",
+      "responses": [
+        {
+          "uuid": "a4c785b6-0af6-4ff0-a9f5-fd8dfbc0cd1a",
+          "body": "{\n  \"id\": 27,\n  \"name\": \"Khoji Infrastructure\",\n  \"type\": \"scrum\",\n  \"location\": {\n    \"type\": \"project\",\n    \"key\": \"KFA\",\n    \"id\": \"10000\",\n    \"name\": \"Khoji for Agile\"\n  },\n  \"filter\": {\n    \"id\": \"10041\",\n    \"self\": \"https://uworxltd.atlassian.net/rest/api/2/filter/10041\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "f40c07e2-cb47-4f98-b0ad-fbf198cfe7e3",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/internal/einvoice_configuration",
+      "responses": [
+        {
+          "uuid": "38858923-0f8d-499c-abb2-4d7df6da273f",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "85f9a011-7808-4204-916c-36a32cb5ce30",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v2/subscriptions/BTUUaUTXpEBpo1KCt?locale=en-US",
+      "responses": [
+        {
+          "uuid": "36a414f6-f8c9-47bd-9e61-802b6ea25fa7",
+          "body": "{\"subscription\":{\"id\":\"BTUUaUTXpEBpo1KCt\",\"plan_id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"plan_quantity\":1,\"plan_unit_price\":0,\"billing_period\":1,\"billing_period_unit\":\"year\",\"customer_id\":\"19A42mTXpDvgA1GAB\",\"plan_amount\":0,\"plan_free_quantity\":0,\"status\":\"active\",\"current_term_start\":1678196190,\"current_term_end\":1709818590,\"next_billing_at\":1709818590,\"created_at\":1678196190,\"started_at\":1678196190,\"activated_at\":1678196190,\"updated_at\":1678196196,\"has_scheduled_changes\":false,\"channel\":\"web\",\"resource_version\":1678196196371,\"deleted\":false,\"object\":\"subscription\",\"currency_code\":\"USD\",\"subscription_items\":[{\"item_price_id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"item_type\":\"plan\",\"quantity\":1,\"unit_price\":0,\"amount\":0,\"free_quantity\":0,\"object\":\"subscription_item\"},{\"item_price_id\":\"Free-Users-Staging-USD-Yearly\",\"item_type\":\"addon\",\"quantity\":1,\"unit_price\":500,\"amount\":500,\"added_type\":\"auto\",\"object\":\"subscription_item\"}],\"addons\":[{\"id\":\"Free-Users-Staging-USD-Yearly\",\"quantity\":1,\"unit_price\":500,\"amount\":500,\"object\":\"addon\",\"added_type\":\"auto\"}],\"next_billing_amount\":500,\"due_invoices_count\":1,\"due_since\":1678196190,\"total_dues\":500,\"mrr\":42,\"exchange_rate\":1.0,\"base_currency_code\":\"USD\",\"has_scheduled_advance_invoices\":false,\"last_changed_at\":1678196190,\"is_items_model\":true,\"payment_mandates\":[]},\"customer\":{\"id\":\"19A42mTXpDvgA1GAB\",\"email\":\"dummy@email.com\",\"company\":\"Uworx-test-response\",\"auto_collection\":\"off\",\"net_term_days\":0,\"allow_direct_debit\":false,\"created_at\":1678196128,\"taxability\":\"taxable\",\"updated_at\":1678196128,\"pii_cleared\":\"active\",\"channel\":\"web\",\"resource_version\":1678196128575,\"deleted\":false,\"object\":\"customer\",\"card_status\":\"no_card\",\"promotional_credits\":0,\"refundable_credits\":0,\"excess_payments\":0,\"unbilled_charges\":0,\"preferred_currency_code\":\"USD\",\"mrr\":0,\"cf_tenant_name\":\"xyz\"}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "3efe7c5b-6114-482f-8fd2-fd4dab39f8b7",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "pi/v2/subscriptions/BTUUaUTXpEBpo1KCt/cart_sub_update?hp_token=dW8wiHWOja6wpsHnzNtSJtwg0zBvLyQZ",
+      "responses": [
+        {
+          "uuid": "dd203cd1-9e49-4f5b-97c3-bc637eb76e60",
+          "body": "{\"order\":{\"plan\":{\"id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"pricing_model\":\"flat_fee\",\"quantity\":1,\"unit_amount\":0,\"amount\":0,\"tiers\":[],\"period\":1,\"period_unit\":\"year\",\"free_quantity\":0,\"details\":{\"id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"name\":\"Early Bird Plan (Vanilla) USD Yearly\",\"invoice_name\":\"Early Bird Plan (Vanilla)\",\"price\":0,\"period\":1,\"period_unit\":\"year\",\"pricing_model\":\"flat_fee\",\"free_quantity\":0,\"status\":\"active\",\"enabled_in_hosted_pages\":true,\"enabled_in_portal\":true,\"addon_applicability\":\"all\",\"giftable\":false,\"object\":\"plan\",\"attached_items\":[{\"attached_item\":{\"db_id\":\"attached_item_6458805923121999477\",\"id\":\"ada053d2-de5e-42ee-8c88-f83024217671\",\"parent_item_id\":\"Early-Bird-Plan-Vanilla\",\"item_id\":\"Free-Users-Staging\",\"type\":\"mandatory\",\"status\":\"active\",\"quantity\":1,\"created_at\":1677747545,\"resource_version\":1677747545957,\"updated_at\":1677747545,\"object\":\"attached_item\",\"item\":{\"db_id\":\"item_4557767662102480341\",\"id\":\"Free-Users-Staging\",\"name\":\"Users (Staging)\",\"external_name\":\"Users (Staging)\",\"description\":\"Users addon created for testing purposes on the staging environment.\",\"status\":\"active\",\"resource_version\":1672725223506,\"updated_at\":1672725223,\"item_family_id\":\"Khoji-for-Agile\",\"type\":\"addon\",\"is_shippable\":false,\"is_giftable\":false,\"enabled_for_checkout\":true,\"enabled_in_portal\":true,\"unit\":\"user\",\"metered\":false,\"channel\":\"web\",\"metadata\":{},\"object\":\"item\",\"archivable\":false},\"item_prices\":[{\"item_price\":{\"db_id\":\"item_price_8460219178517769444\",\"id\":\"Free-Users-Staging-USD-Yearly\",\"name\":\"Users (Staging) USD Yearly\",\"item_family_id\":\"Khoji-for-Agile\",\"item_id\":\"Free-Users-Staging\",\"status\":\"active\",\"external_name\":\"Users (Staging)\",\"pricing_model\":\"per_unit\",\"price\":0,\"period\":1,\"currency_code\":\"USD\",\"period_unit\":\"year\",\"free_quantity\":0,\"channel\":\"web\",\"resource_version\":1672725237859,\"updated_at\":1672725237,\"created_at\":1672725237,\"is_taxable\":true,\"item_type\":\"addon\",\"show_description_in_invoices\":false,\"show_description_in_quotes\":false,\"object\":\"item_price\",\"archivable\":true,\"amount\":0}}]}}]}},\"addons\":[{\"id\":\"Free-Users-Staging-USD-Yearly\",\"pricing_model\":\"per_unit\",\"quantity\":1,\"unit_amount\":500,\"amount\":500,\"tiers\":[],\"charge_type\":\"recurring\",\"added_type\":\"auto\",\"period\":1,\"period_unit\":\"YEAR\",\"details\":{\"id\":\"Free-Users-Staging-USD-Yearly\",\"name\":\"Users (Staging) USD Yearly\",\"invoice_name\":\"Users (Staging)\",\"pricing_model\":\"per_unit\",\"charge_type\":\"recurring\",\"price\":0,\"period\":1,\"period_unit\":\"year\",\"status\":\"active\",\"enabled_in_portal\":true,\"is_shippable\":false,\"object\":\"addon\"}}]},\"subscription_estimate\":{\"id\":\"BTUUaUTXpEBpo1KCt\",\"status\":\"active\",\"next_billing_at\":1709818590,\"object\":\"subscription_estimate\",\"currency_code\":\"USD\"},\"next_invoice_estimates\":[{\"recurring\":true,\"date\":1709818590,\"price_type\":\"tax_exclusive\",\"sub_total\":500,\"total\":500,\"credits_applied\":0,\"amount_paid\":0,\"amount_due\":500,\"object\":\"invoice_estimate\",\"customer_id\":\"19A42mTXpDvgA1GAB\",\"line_items\":[{\"id\":\"li_BTTzUSTXpGwoYKMt\",\"date_from\":1709818590,\"date_to\":1741354590,\"unit_amount\":0,\"quantity\":1,\"amount\":0,\"pricing_model\":\"flat_fee\",\"is_taxed\":false,\"tax_amount\":0,\"object\":\"line_item\",\"subscription_id\":\"BTUUaUTXpEBpo1KCt\",\"customer_id\":\"19A42mTXpDvgA1GAB\",\"description\":\"Early Bird Plan (Vanilla)\",\"entity_type\":\"plan_item_price\",\"entity_id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"discount_amount\":0,\"item_level_discount_amount\":0},{\"id\":\"li_BTTzUSTXpGwolKMu\",\"date_from\":1709818590,\"date_to\":1741354590,\"unit_amount\":500,\"quantity\":1,\"amount\":500,\"pricing_model\":\"per_unit\",\"is_taxed\":false,\"tax_amount\":0,\"object\":\"line_item\",\"subscription_id\":\"BTUUaUTXpEBpo1KCt\",\"customer_id\":\"19A42mTXpDvgA1GAB\",\"description\":\"Users (Staging)\",\"entity_type\":\"addon_item_price\",\"entity_id\":\"Free-Users-Staging-USD-Yearly\",\"discount_amount\":0,\"item_level_discount_amount\":0}],\"taxes\":[],\"line_item_taxes\":[],\"currency_code\":\"USD\",\"round_off_amount\":0,\"line_item_discounts\":[]}],\"credit_note_estimates\":[]}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "c2e930a2-3406-4dce-a2a6-1109ec62c6ad",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v2/payment_sources?customer_id[is]=19A42mTXpDvgA1GAB&limit=10&sort_by[desc]=created_at&locale=en-US",
+      "responses": [
+        {
+          "uuid": "17c4f81e-b9e2-4702-81b7-9ba7158ca4b1",
+          "body": "{\"list\":[]}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0e817fa8-bb0b-4291-ae3b-82f8ee8cf471",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v2/customers/19A42mTXpDvgA1GAB?locale=en-US",
+      "responses": [
+        {
+          "uuid": "ad0f9bd3-8e92-4632-b333-229fd2cd126a",
+          "body": "{\"customer\":{\"id\":\"19A42mTXpDvgA1GAB\",\"email\":\"dummy@email.com\",\"company\":\"Uworx-test-response\",\"auto_collection\":\"off\",\"net_term_days\":0,\"allow_direct_debit\":false,\"created_at\":1678196128,\"taxability\":\"taxable\",\"updated_at\":1678196128,\"pii_cleared\":\"active\",\"channel\":\"web\",\"resource_version\":1678196128575,\"deleted\":false,\"object\":\"customer\",\"card_status\":\"no_card\",\"promotional_credits\":0,\"refundable_credits\":0,\"excess_payments\":0,\"unbilled_charges\":0,\"preferred_currency_code\":\"USD\",\"mrr\":0,\"cf_tenant_name\":\"xyz\"}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "4b0959a0-9683-4b4b-8a90-e44060a34f8b",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v2/subscriptions?customer_id[is]=19A42mTXpDvgA1GAB&limit=5&sort_by[desc]=created_at&locale=en-US",
+      "responses": [
+        {
+          "uuid": "fcd4edcf-8bc8-47c0-a0f6-1a2ac1305a8e",
+          "body": "{\"list\":[{\"subscription\":{\"id\":\"BTUUaUTXpEBpo1KCt\",\"plan_id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"plan_quantity\":1,\"plan_unit_price\":0,\"billing_period\":1,\"billing_period_unit\":\"year\",\"customer_id\":\"19A42mTXpDvgA1GAB\",\"plan_amount\":0,\"plan_free_quantity\":0,\"status\":\"active\",\"current_term_start\":1678196190,\"current_term_end\":1709818590,\"next_billing_at\":1709818590,\"created_at\":1678196190,\"started_at\":1678196190,\"activated_at\":1678196190,\"updated_at\":1678196196,\"has_scheduled_changes\":false,\"channel\":\"web\",\"resource_version\":1678196196371,\"deleted\":false,\"object\":\"subscription\",\"currency_code\":\"USD\",\"subscription_items\":[{\"item_price_id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"item_type\":\"plan\",\"quantity\":1,\"unit_price\":0,\"amount\":0,\"free_quantity\":0,\"object\":\"subscription_item\"},{\"item_price_id\":\"Free-Users-Staging-USD-Yearly\",\"item_type\":\"addon\",\"quantity\":1,\"unit_price\":500,\"amount\":500,\"added_type\":\"auto\",\"object\":\"subscription_item\"}],\"addons\":[{\"id\":\"Free-Users-Staging-USD-Yearly\",\"quantity\":1,\"unit_price\":500,\"amount\":500,\"object\":\"addon\",\"added_type\":\"auto\"}],\"next_billing_amount\":500,\"due_invoices_count\":1,\"due_since\":1678196190,\"total_dues\":500,\"mrr\":42,\"exchange_rate\":1.0,\"base_currency_code\":\"USD\",\"has_scheduled_advance_invoices\":false,\"last_changed_at\":1678196190,\"payment_mandates\":[],\"is_items_model\":true},\"customer\":{\"id\":\"19A42mTXpDvgA1GAB\",\"email\":\"dummy@email.com\",\"company\":\"Uworx-test-response\",\"auto_collection\":\"off\",\"net_term_days\":0,\"allow_direct_debit\":false,\"created_at\":1678196128,\"taxability\":\"taxable\",\"updated_at\":1678196128,\"pii_cleared\":\"active\",\"channel\":\"web\",\"resource_version\":1678196128575,\"deleted\":false,\"object\":\"customer\",\"card_status\":\"no_card\",\"promotional_credits\":0,\"refundable_credits\":0,\"excess_payments\":0,\"unbilled_charges\":0,\"preferred_currency_code\":\"USD\",\"mrr\":0,\"cf_tenant_name\":\"xyz\"}}]}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "652f640f-e116-49e2-a874-34f30df09aa5",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/internal/gateway/retrieve?entity_type=CUSTOMER&entity_id=19A42mTXpDvgA1GAB&locale=en-US",
+      "responses": [
+        {
+          "uuid": "1be857a4-91ef-4c7c-8e61-90c01c045117",
+          "body": "{\"pm_list\":[{\"mode\":\"ONLINE\",\"type\":\"card\",\"id\":\"gw_199LX5TIitslbl0\",\"display_name\":\"Card\",\"gateway_name\":\"CHARGEBEE\",\"gateway_currency\":\"USD\",\"name\":\"Chargebee Test Gateway\",\"enabled3ds\":true,\"test_cards\":[{\"number\":\"4111 1111 1111 1111\",\"cvv\":\"123\",\"name\":\"Valid Card\",\"exp_month\":\"12\",\"exp_year\":\"2029\",\"desc\":\"Visa Card\"},{\"number\":\"4119 8627 6033 8320\",\"cvv\":\"123\",\"name\":\"Verification Error Card\",\"exp_month\":\"12\",\"exp_year\":\"2029\",\"desc\":\"Card number will not be stored due to an unsuccessful verification.\"},{\"number\":\"4005 5192 0000 0004\",\"cvv\":\"123\",\"name\":\"Transaction Error Card\",\"exp_month\":\"12\",\"exp_year\":\"2029\",\"desc\":\"Card can be added but any attempts to charge this card will fail with an \\\"Insufficient funds\\\" error.\"}],\"token_amount\":100,\"token_amount3ds\":100,\"spreedly_config\":{\"use_global\":false,\"allowed_3ds_card_networks\":[\"VISA\",\"MASTERCARD\",\"AMEX\"],\"environment_key\":\"2oFPzyPCu66fsX0vwx7Dsrm4qRg\"}}],\"opm_configured_list\":[]}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "ab3f75a2-1d9a-4509-a981-9ba6b107abda",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/internal/1678196700/retrieve_js_info",
+      "responses": [
+        {
+          "uuid": "6643f3e8-6e45-48e0-a86b-8b1a260e5c40",
+          "body": "{\"image\":{\"align\":\"center\",\"url\":\"https://cb-prod-eu-c1-invoice-logos.s3.eu-central-1.amazonaws.com/khojiforagile-test/logo_1664362256_198VCETIj0PfYgGK.png\"},\"site\":\"khojiforagile-test\",\"color\":\"#256477\",\"region\":\"eu-central-1\",\"default_hp_layout\":\"in_app\",\"domain\":\"chargebee.com\",\"domain_prefix\":\"eu\",\"static_domain\":{\"v3\":\"chargebeestaticv2.com\"},\"configuration_version\":\"1678085824837V1673599509\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "3911febe-2fd2-4e79-be85-c8e530b2f006",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/internal/track_info_error",
+      "responses": [
+        {
+          "uuid": "7d3318a7-b50b-437b-8228-21f9a7355e30",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "e3bc7dab-02b0-4ed4-8fd0-b70a9ffc926c",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/v2/subscriptions/BTUUaUTXpEBpo1KCt/cart_sub_update?hp_token=dW8wiHWOja6wpsHnzNtSJtwg0zBvLyQZ",
+      "responses": [
+        {
+          "uuid": "b48e2567-6fe8-4ffc-b4ba-d50e78220823",
+          "body": "{\"order\":{\"plan\":{\"id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"pricing_model\":\"flat_fee\",\"quantity\":1,\"unit_amount\":0,\"amount\":0,\"tiers\":[],\"period\":1,\"period_unit\":\"year\",\"free_quantity\":0,\"details\":{\"id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"name\":\"Early Bird Plan (Vanilla) USD Yearly\",\"invoice_name\":\"Early Bird Plan (Vanilla)\",\"price\":0,\"period\":1,\"period_unit\":\"year\",\"pricing_model\":\"flat_fee\",\"free_quantity\":0,\"status\":\"active\",\"enabled_in_hosted_pages\":true,\"enabled_in_portal\":true,\"addon_applicability\":\"all\",\"giftable\":false,\"object\":\"plan\",\"attached_items\":[{\"attached_item\":{\"db_id\":\"attached_item_6458805923121999477\",\"id\":\"ada053d2-de5e-42ee-8c88-f83024217671\",\"parent_item_id\":\"Early-Bird-Plan-Vanilla\",\"item_id\":\"Free-Users-Staging\",\"type\":\"mandatory\",\"status\":\"active\",\"quantity\":1,\"created_at\":1677747545,\"resource_version\":1677747545957,\"updated_at\":1677747545,\"object\":\"attached_item\",\"item\":{\"db_id\":\"item_4557767662102480341\",\"id\":\"Free-Users-Staging\",\"name\":\"Users (Staging)\",\"external_name\":\"Users (Staging)\",\"description\":\"Users addon created for testing purposes on the staging environment.\",\"status\":\"active\",\"resource_version\":1672725223506,\"updated_at\":1672725223,\"item_family_id\":\"Khoji-for-Agile\",\"type\":\"addon\",\"is_shippable\":false,\"is_giftable\":false,\"enabled_for_checkout\":true,\"enabled_in_portal\":true,\"unit\":\"user\",\"metered\":false,\"channel\":\"web\",\"metadata\":{},\"object\":\"item\",\"archivable\":false},\"item_prices\":[{\"item_price\":{\"db_id\":\"item_price_8460219178517769444\",\"id\":\"Free-Users-Staging-USD-Yearly\",\"name\":\"Users (Staging) USD Yearly\",\"item_family_id\":\"Khoji-for-Agile\",\"item_id\":\"Free-Users-Staging\",\"status\":\"active\",\"external_name\":\"Users (Staging)\",\"pricing_model\":\"per_unit\",\"price\":0,\"period\":1,\"currency_code\":\"USD\",\"period_unit\":\"year\",\"free_quantity\":0,\"channel\":\"web\",\"resource_version\":1672725237859,\"updated_at\":1672725237,\"created_at\":1672725237,\"is_taxable\":true,\"item_type\":\"addon\",\"show_description_in_invoices\":false,\"show_description_in_quotes\":false,\"object\":\"item_price\",\"archivable\":true,\"amount\":0}}]}}]}},\"addons\":[{\"id\":\"Free-Users-Staging-USD-Yearly\",\"pricing_model\":\"per_unit\",\"quantity\":1,\"unit_amount\":500,\"amount\":500,\"tiers\":[],\"charge_type\":\"recurring\",\"added_type\":\"auto\",\"period\":1,\"period_unit\":\"YEAR\",\"details\":{\"id\":\"Free-Users-Staging-USD-Yearly\",\"name\":\"Users (Staging) USD Yearly\",\"invoice_name\":\"Users (Staging)\",\"pricing_model\":\"per_unit\",\"charge_type\":\"recurring\",\"price\":0,\"period\":1,\"period_unit\":\"year\",\"status\":\"active\",\"enabled_in_portal\":true,\"is_shippable\":false,\"object\":\"addon\"}}]},\"subscription_estimate\":{\"id\":\"BTUUaUTXpEBpo1KCt\",\"status\":\"active\",\"next_billing_at\":1709818590,\"object\":\"subscription_estimate\",\"currency_code\":\"USD\"},\"next_invoice_estimates\":[{\"recurring\":true,\"date\":1709818590,\"price_type\":\"tax_exclusive\",\"sub_total\":500,\"total\":500,\"credits_applied\":0,\"amount_paid\":0,\"amount_due\":500,\"object\":\"invoice_estimate\",\"customer_id\":\"19A42mTXpDvgA1GAB\",\"line_items\":[{\"id\":\"li_BTccy5TXpHJcuJx4\",\"date_from\":1709818590,\"date_to\":1741354590,\"unit_amount\":0,\"quantity\":1,\"amount\":0,\"pricing_model\":\"flat_fee\",\"is_taxed\":false,\"tax_amount\":0,\"object\":\"line_item\",\"subscription_id\":\"BTUUaUTXpEBpo1KCt\",\"customer_id\":\"19A42mTXpDvgA1GAB\",\"description\":\"Early Bird Plan (Vanilla)\",\"entity_type\":\"plan_item_price\",\"entity_id\":\"Early-Bird-Plan-Vanilla-USD-Yearly\",\"discount_amount\":0,\"item_level_discount_amount\":0},{\"id\":\"li_BTccy5TXpHJd6Jx5\",\"date_from\":1709818590,\"date_to\":1741354590,\"unit_amount\":500,\"quantity\":1,\"amount\":500,\"pricing_model\":\"per_unit\",\"is_taxed\":false,\"tax_amount\":0,\"object\":\"line_item\",\"subscription_id\":\"BTUUaUTXpEBpo1KCt\",\"customer_id\":\"19A42mTXpDvgA1GAB\",\"description\":\"Users (Staging)\",\"entity_type\":\"addon_item_price\",\"entity_id\":\"Free-Users-Staging-USD-Yearly\",\"discount_amount\":0,\"item_level_discount_amount\":0}],\"taxes\":[],\"line_item_taxes\":[],\"currency_code\":\"USD\",\"round_off_amount\":0,\"line_item_discounts\":[]}],\"credit_note_estimates\":[]}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "8bf57a0f-11cf-4062-8849-8b6abb755639"
+    },
+    {
+      "type": "route",
+      "uuid": "ae5dfd03-4e59-416c-b3f7-c809f57bbc3d"
+    },
+    {
+      "type": "route",
+      "uuid": "bf1b5882-6124-4692-8cda-5f5fcb6b12b4"
+    },
+    {
+      "type": "route",
+      "uuid": "253dfee6-a0bd-4258-802e-c2c73a6e19ea"
+    },
+    {
+      "type": "route",
+      "uuid": "280068a9-731a-4ed0-af8e-6b1a34b0a719"
+    },
+    {
+      "type": "route",
+      "uuid": "3eb5c701-a168-4265-9626-4815272c1900"
+    },
+    {
+      "type": "route",
+      "uuid": "62a74206-1c2b-4708-add0-23da9e776f91"
+    },
+    {
+      "type": "route",
+      "uuid": "276bcb89-d441-40d9-8ecc-30e3de45f853"
+    },
+    {
+      "type": "route",
+      "uuid": "dc905166-23f2-4ee2-984c-112da385ff2f"
+    },
+    {
+      "type": "route",
+      "uuid": "126851bb-aab9-4b4f-850c-209463a36882"
+    },
+    {
+      "type": "route",
+      "uuid": "a87be9d3-0ffd-4b8e-9f09-df9413ea3627"
+    },
+    {
+      "type": "route",
+      "uuid": "f40c07e2-cb47-4f98-b0ad-fbf198cfe7e3"
+    },
+    {
+      "type": "route",
+      "uuid": "85f9a011-7808-4204-916c-36a32cb5ce30"
+    },
+    {
+      "type": "route",
+      "uuid": "3efe7c5b-6114-482f-8fd2-fd4dab39f8b7"
+    },
+    {
+      "type": "route",
+      "uuid": "c2e930a2-3406-4dce-a2a6-1109ec62c6ad"
+    },
+    {
+      "type": "route",
+      "uuid": "0e817fa8-bb0b-4291-ae3b-82f8ee8cf471"
+    },
+    {
+      "type": "route",
+      "uuid": "4b0959a0-9683-4b4b-8a90-e44060a34f8b"
+    },
+    {
+      "type": "route",
+      "uuid": "652f640f-e116-49e2-a874-34f30df09aa5"
+    },
+    {
+      "type": "route",
+      "uuid": "ab3f75a2-1d9a-4509-a981-9ba6b107abda"
+    },
+    {
+      "type": "route",
+      "uuid": "3911febe-2fd2-4e79-be85-c8e530b2f006"
+    },
+    {
+      "type": "route",
+      "uuid": "e3bc7dab-02b0-4ed4-8fd0-b70a9ffc926c"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
